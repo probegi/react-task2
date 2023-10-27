@@ -14,7 +14,7 @@ export default function App() {
   const [showName, setShowName] = useState(""); //表示
   const [weight, setWeight] = useState("300 pounds");
   const [temp, setTemp] = useState("94 fahrenheit");
-  const [ukus, setukus] = useState("us");
+  const [ukus, setUkus] = useState("us");
 
   const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
   const insertY = ["the soup kitchen", "Disneyland", "the White House"];
@@ -50,7 +50,7 @@ export default function App() {
   }
 
   const handleOptionChange = (event) => {
-    setukus(event.target.value);
+    setUkus(event.target.value);
   };
 
   return (
