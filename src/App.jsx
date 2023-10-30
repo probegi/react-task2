@@ -24,17 +24,12 @@ export default function App() {
     "turned into a slug and crawled away",
   ];
 
-  function set(insert) {
-    const setItem = randomValueFromArray(insert);
-    return setItem;
-  }
-
   function handleClick() {
     const setStory = true;
     setShowStory(setStory);
-    setXItem(set(insertX));
-    setYItem(set(insertY));
-    setZItem(set(insertZ));
+    setXItem(randomValueFromArray(insertX));
+    setYItem(randomValueFromArray(insertY));
+    setZItem(randomValueFromArray(insertZ));
     if (name == "") {
       setShowName("Bob");
     } else {
